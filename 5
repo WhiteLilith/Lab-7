@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication19
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int A, B, C, D, E;
+            Console.Write("Введите число А: ");
+            A = int.Parse(Console.ReadLine());
+            B = A / 1000;
+            C = (A/100) % 10;
+            D = (A/10) % 10;
+            E = A % 10;
+            if (B == E && C == D)
+            {
+                Console.WriteLine("Это палиндром");
+            }
+            else
+            {
+                Console.WriteLine("Это число не является палиндромом");
+            }
+            Console.ReadKey();
+        }
+    }
+}
