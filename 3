@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication19
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double A, B, C, D;
+            Console.Write("Введите число А: ");
+            A = double.Parse(Console.ReadLine());
+            B = A%2;
+            if (A<100 && B == 0)
+            {
+                Console.WriteLine("Это четное двузначное число");
+            }
+            else
+            {
+                Console.WriteLine("Условие не выполнено");
+            }
+            Console.ReadKey();
+        }
+    }
+}
