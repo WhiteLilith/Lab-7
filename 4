@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication19
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double A, B, C, D;
+            Console.Write("Введите трехзначное число А: ");
+            A = double.Parse(Console.ReadLine());
+            B = A / 100;
+            C = (A / 10)%10;
+            D = A % 10;
+            if (D<C && C<B)
+            {
+                Console.WriteLine("Цифры данного числа образуют убывающую последовательность ");
+            }
+            else
+            {
+                if(B<C && C<D)
+                {
+                    Console.WriteLine("Цифры данного числа образуют возрастающую последовательность ");
+                }
+                else
+                {
+                    Console.WriteLine("Цифры данного числа не образуют монотонную последовательность");
+                }
+            }
+            Console.ReadKey();
+        }
+    }
+}
