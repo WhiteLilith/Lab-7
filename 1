@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication19
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double A, B, C, D;
+            Console.Write("Введите число А: ");
+            A = double.Parse(Console.ReadLine());
+            Console.Write("Введите число В: ");
+            B = double.Parse(Console.ReadLine());
+            if (A>2 && B<=3)
+            {
+                Console.WriteLine("A>2, B<=3");
+            }
+            else
+            {
+                Console.WriteLine("1/2 из условий не выполнено");
+            }
+            Console.ReadKey();
+        }
+    }
+}
