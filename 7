@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication19
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double A, B, C, D, E;
+            Console.Write("Введите число А: ");
+            A = int.Parse(Console.ReadLine());
+            Console.Write("Введите число B: ");
+            B = int.Parse(Console.ReadLine());
+            Console.Write("Введите число C: ");
+            C = int.Parse(Console.ReadLine());
+            if (A+B>C && B+C>A && A+C>B)
+            {
+                Console.WriteLine("Данный трегольник существует");
+            }
+            else
+            {
+                Console.WriteLine("Данный трегольник не существует");
+            }
+            Console.ReadKey();
+        }
+    }
+}
