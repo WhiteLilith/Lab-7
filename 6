@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication19
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double A, B, C, D, E;
+            Console.Write("Введите число А: ");
+            A = int.Parse(Console.ReadLine());
+            Console.Write("Введите число B: ");
+            B = int.Parse(Console.ReadLine());
+            Console.Write("Введите число C: ");
+            C = int.Parse(Console.ReadLine());
+            if (C * C == B * B + A * A || B * B == A * A + C * C || A * A == B * B + C *C)
+            {
+                    Console.WriteLine("Данный трегольник прямоугольный");
+            }
+            else
+            {
+                    Console.WriteLine("Данный трегольник не прямоугольный");
+            }
+            Console.ReadKey();
+        }
+    }
+}
